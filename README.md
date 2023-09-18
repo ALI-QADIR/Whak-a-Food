@@ -1,46 +1,32 @@
-# Ball Brawl
+# Whak-a-Food - A Whack-a-Mole Style Browser Game
 
-Welcome to Ball Brawl, an exciting 3D game where you must survive for as long as possible on a small platform as a ball. Your goal is to defeat the enemy balls that spawn in waves, each with different abilities, sizes, colors, mass, and speed. Each wave spawns a different number of enemies with every third wave being a boss round where a big ball appears, which can spawn small minion balls. As you progress through the game, you'll encounter a random power-up with each wave, which you can activate by pressing the space bar.
-
-## Gameplay
+Welcome to Whak-a-Food, a delightful and mouthwatering browser game inspired by the classic Whack-a-Mole! Test your reflexes and satisfy your appetite as you "whak" your way through an array of delicious foods. Developed using Unity, this simple, yet addictive game is designed for web browsers, making it a perfect pastime.
 
 ![Gameplay](./Assets/Images/Gameplay.png)
 
-To control your ball, use the W and S keys to move forward or backward with respect to the camera, and the A and D keys to rotate the camera. The enemies will spawn randomly in waves, starting with one enemy ball in the first wave and increasing by one with each subsequent wave. The third wave features the boss enemy, a big ball that can spawn smaller minion balls.
+## How to play
 
-Here are descriptions of the different enemy balls:
+-   Whak the Foods: Use your mouse or tap the screen to "whak" the tasty foods that pop up from their hiding places.
 
--   Normal Enemy: These enemies are about the same size as the player ball and have a red and black checkered pattern. They have a mass of 1 and move at a speed similar to the player ball.
+-   Don't Miss: Be quick! Some foods are sneaky and disappear faster than you can whak them.
 
--   Weak Enemy: These enemies are slightly smaller than the player ball and are a reddish-pink color. They have a smaller mass of 0.5 and move at the same speed as the player ball.
+-   Achieve High Scores: Rack up points by whacking as many foods as you can. Aim for combos and beat your previous high score!
 
--   Strong Enemy: These enemies are larger than the player ball and are yellow in color. They have a mass of 2 and move faster than the player ball.
+## Play Now
 
--   Boss Enemy: This enemy is significantly larger than the player ball and is pink in color. It has a massive size and mass of 5, but moves slower than the player ball. During the boss round, the boss will also spawn two types of minions:
-
-    -   Mini Enemy: These minions are small and glossy purple in color. They have a size and mass of 0.8 and move faster than the player ball.
-
-    -   Mini Fast Enemy: These minions are the same size and color as the Mini Enemy, but they move even faster at a speed of 5.
-
-Here are descriptions of the different power-ups:
-
--   Star: Gives the player invincibility. Any enemy that touches the player is launched back. Lasts 7 seconds.
--   Bolt: Gives the player the ability to fire homing missiles that track any and all enemies in the scene. Lasts 7 seconds.
--   Fire: Gives the player the ability to super smash by launching into the air and smashing down, launching all enemies in the smash radius to be knocked back. Lasts 7 seconds.
+Satisfy your hunger for fun by playing Whak-a-Food right in your web browser. [Play Whak-a-Food Now](https://aliqadir.itch.io/whack-a-food)
 
 ## Features
 
-The game utilizes many features of Unity, including but not limited to:
+-   Simple and Addictive: Easy-to-pick-up gameplay provides endless entertainment.
+-   Mouthwatering Foods: Whak your way through a variety of delectable dishes.
+-   Browser-Ready: No downloads required—play instantly in your web browser.
 
--   Particle System
--   Physics
--   Enums
--   Animation Controller
--   Scripting with C#
+## Credits
 
-## Installation
-
-To install the game, clone the repository and open it in Unity to build and run the game from the source code.
+Game Developed by Ali Qadir
+Assets from Unity Learn
+Made in Unity
 
 ## License
 
@@ -48,4 +34,4 @@ This project is licensed under the MIT License. Feel free to modify and use any 
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact me at [LinkedIn](https://www.linkedin.com/in/ali-qadir-1509b1226/) or [Instagram](https://www.instagram.com/oily.oli/).
+If you have any questions or suggestions, feel free to contact me at [LinkedIn](https://www.linkedin.com/in/ali--qadir/) or [Instagram](https://www.instagram.com/oily.oli/).

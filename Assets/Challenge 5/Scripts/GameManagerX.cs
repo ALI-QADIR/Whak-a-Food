@@ -11,7 +11,7 @@ public class GameManagerX : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI timeText;
     public GameObject titleScreen;
-    public Button restartButton; 
+    public Button restartButton;
 
     public List<GameObject> targetPrefabs;
 
@@ -20,10 +20,10 @@ public class GameManagerX : MonoBehaviour
     public int time = 60;
     public bool isGameActive;
 
-    private float spaceBetweenSquares = 2.5f; 
+    private float spaceBetweenSquares = 2.5f;
     private float minValueX = -3.75f; //  x value of the center of the left-most square
     private float minValueY = -3.75f; //  y value of the center of the bottom-most square
-    
+
     // Start the game, remove title screen, reset score, and adjust spawnRate based on difficulty button clicked
     public void StartGame(int difficulty)
     {
@@ -38,7 +38,7 @@ public class GameManagerX : MonoBehaviour
     }
 
     // While game is active spawn a random target
-    IEnumerator SpawnTarget()
+    private IEnumerator SpawnTarget()
     {
         while (isGameActive)
         {
@@ -49,11 +49,10 @@ public class GameManagerX : MonoBehaviour
             {
                 Instantiate(targetPrefabs[index], RandomSpawnPosition(), targetPrefabs[index].transform.rotation);
             }
-            
         }
     }
 
-    IEnumerator TimerCoroutine()
+    private IEnumerator TimerCoroutine()
     {
         while (isGameActive)
         {
@@ -63,18 +62,17 @@ public class GameManagerX : MonoBehaviour
     }
 
     // Generate a random spawn position based on a random index from 0 to 3
-    Vector3 RandomSpawnPosition()
+    private Vector3 RandomSpawnPosition()
     {
         float spawnPosX = minValueX + (RandomSquareIndex() * spaceBetweenSquares);
         float spawnPosY = minValueY + (RandomSquareIndex() * spaceBetweenSquares);
 
         Vector3 spawnPosition = new Vector3(spawnPosX, spawnPosY, 0);
         return spawnPosition;
-
     }
 
     // Generates random square index from 0 to 3, which determines which square the target will appear in
-    int RandomSquareIndex()
+    private int RandomSquareIndex()
     {
         return Random.Range(0, 4);
     }
@@ -107,5 +105,4 @@ public class GameManagerX : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-
 }
